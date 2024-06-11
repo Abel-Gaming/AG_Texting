@@ -15,11 +15,4 @@ client_scripts {
 	'client/main.lua'
 }
 
-dependencies {
-    'nh-context', -- https://github.com/nerohiro/nh-context
-    'nh-keyboard' -- https://github.com/nerohiro/nh-keyboard
-}
-
-escrow_ignore {
-    'config.lua'
-}
+shared_script '@ox_lib/init.lua'
