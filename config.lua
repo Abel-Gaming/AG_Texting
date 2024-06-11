@@ -9,4 +9,4 @@ Config.NotificationSoundName = 'CHALLENGE_UNLOCKED'
 Config.NotificationSoundSetName = 'HUD_AWARDS'
 
 Config.EnableDiscordLog = false -- This will allow you to manage and view all messages sent via a Discord Webhook
-Config.DiscordWebHook = 'https://discord.com/api/webhooks/1221149232275128362/8s5JP7XfeUNmHOMA4n-ANcazg17anMXEYhrr1YZ8Oo1Bs0PZZZMUgo72QM2tAJPUZeS6'
+Config.DiscordWebHook = ''
