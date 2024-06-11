@@ -23,7 +23,6 @@ function NewTextMessage()
     local input = lib.inputDialog('New Message', {'Player ID', 'Message'})
  
     if not input then return end
-    print(json.encode(input), input[1], input[2])
     local playerID = input[1]
     local message = input[2]
     local personalID = PlayerPedId()
@@ -34,6 +33,7 @@ end
 RegisterNetEvent('AG_Phone:MessageRecieved')
 AddEventHandler('AG_Phone:MessageRecieved', function(sender, senderID, message)
     LastSender = senderID
+    PlaySoundFrontend( -1, Config.NotificationSoundName, Config.NotificationSoundSetName, 1)
     TriggerEvent("chatMessage", "^2Text Message ^1(" .. sender .. ")", {0, 0, 0}, "^7" .. message)
 end)
 
